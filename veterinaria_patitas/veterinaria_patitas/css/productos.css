@@ -1,9 +1,13 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #titulo{
     color: #fff;
 	width: 500px;
 	text-align:center;
 	margin:auto;
-    font-size:90px;
+    font-size:70px;
 
 }
 #logo{
@@ -14,12 +18,15 @@
     border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
     border-bottom-left-radius: 50% 50%;
+    padding: 5px;
     
 }
 body{
     font-family: 'Shadows Into Light', cursive;
     background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
-
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0%;
 
 }
 
@@ -57,7 +64,7 @@ figure img:hover{
 }
 .nav-hero{
     color: #fff;
-    height: 150px;
+    height: 120px;
     border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 
@@ -74,6 +81,7 @@ figure img:hover{
     padding: 10px;
     font-size: 30px;
 }
+
 .link{
     font-size: 22px;
     display: inline-block;
@@ -90,23 +98,42 @@ figure img:hover{
     width: 100%;
     flex-wrap: wrap;
     color: #fff;
+ 
 }
-
+  
 .item-contact{
     width: 25%;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
     background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 }
-
+  
+  
+a:hover {
+    color: #2198A0;
+  }
+  
+a{ 
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+  
+h5{
+    font-weight: normal;
+    margin: 0;
+    padding: 15;
+    
+}
+  
 .contact-icon{
-    font-size: 24px;
+    font-size: 40px;
     color: #fff;
     line-height: 20px;
     margin-right: 4px;
 }
 .contact-title{
-    font-size: 24px;
-    line-height: 20px;
-
+    font-size: 18px;
+    line-height: 18px;
+  
 }

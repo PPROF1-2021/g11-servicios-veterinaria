@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<title>Veterinaria Patitas - Contacto </title>
-	<!--Insertamos un icono al titulo-->
-	<link rel="icon" href="img/favicon.png">
-	<meta charset="utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>Veterinaria Patitas - Contacto </title>
+    <!--Insertamos un icono al titulo-->
+    <link rel="icon" href="img/favicon.png">
+
+    <!--nuevas etiquetas-->
+    <meta name="description" content="Web para tener relación con los clientes de una veterinaria" />
+    <meta name="robots" content="index" />
+    <meta name="googlebot" content="index" />
+    <meta name="keywords"
+        content="contacto, atención, relación, servicios veterinarios, veterinaria, animales, perros, servicios, mascotas" />
+    <meta name="author" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
+    <meta name="copyright" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type= "text/css" href="css/contacto.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-	<header>
+    <header>
         <nav class="nav-hero">
             <div class="container nav-container">
                 <div class="logo">
-                    <br><img id=logo src="img/logo.jpeg" alt="logo" width="150" height="150" >
+                    <br><img id=logo src="img/logo.jpeg" alt="logo" width="150" height="150">
                 </div>
                 <div class="links">
                     <a href="index.html" class="link">Inicio</a>
@@ -24,54 +40,66 @@
                     <a href="contacto.html" class="link">Contacto</a>
                     <a href="registro.html" class="link">Registrarse</a>
                     <a href="#" class="link">Turnero</a>
-    
+
                 </div>
-    
+
             </div>
         </nav>
-      <h1 id=titulo>Contáctanos</h1>
-	</header>
-    
-		  <Section id="pagdecontacto_comentario">
-             <form method="POST" action="enviar_datos.php">
-       <ul>
-           <li>Nombre y Apellido:<input type="text" name="nombre_apellido" required></li>
-           <li>Correo electrónico:<input type="email" name="correo" required size="70"></li>
-		   <li>Número de Celular:<input type="number" name="tel"></li>
-           <li>Motivo:<select name="motivo">
-               <option value="Consulta">Consulta</option>
-               <option value="Reclamo">Reclamo</option>
-               <option value="Pedido">Pedido</option>
-			   <option value="Opinion">Opinion</option>
-           </select></li>
-           <li>Mensaje:<textarea name="mensaje" rows="5" required></textarea></li>
-           <li class="button"> <button type="submit"><strong>Enviar su mensaje</strong></button> </li>
-		   
-       </ul>
-   </form>
-		  </Section>
-          <br>
-	
-	
-	<footer class="footer">
+
+    </header>
+
+    <Section id="pagdecontacto_comentario">
+        <form method="POST" action="enviar_datos.php" class="formulario">
+            <h1 id=titulo>Contáctanos</h1>
+            <div class="contenedor">
+                <div class="input-contenedor"><input type="text" name="nombre_apellido" required
+                        placeholder="Nombre Completo"></div>
+                <div class="input-contenedor"><input type="email" name="correo" required size="70"
+                        placeholder="Correo electrónico"></div>
+                <div class="input-contenedor"><input type="number" name="tel" placeholder="Número de Celular"></div>
+                <div class="input-contenedor"> <select name="motivo">
+                        <option hidden>Elige un motivo</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Reclamo">Reclamo</option>
+                        <option value="Pedido">Pedido</option>
+                        <option value="Opinion">Opinion</option>
+                    </select></div>
+                <div class="input-contenedor"><textarea name="mensaje" rows="8" required placeholder="Mensaje"
+                        style="font-family:Arial, Helvetica, sans-serif"></textarea></div>
+                <input type="submit" value="Enviar su mensaje" class="button">
+
+
+            </div>
+        </form>
+    </Section>
+    <br>
+
+
+    <footer class="footer">
         <div class="contact">
             <div class="item-contact">
-             <i class='bx bx-copyright contact-icon' ></i>
-             <h3 class="contact-title">VeterinariaPatitas</h3>
+                <i class='bx bx-copyright contact-icon'></i>
+                <h5 class="contact-title"> Copyright © 2021 - </br> Veterinaria Patitas </br> </br> Todos los derechos
+                    reservados.</h5>
+
             </div>
             <div class="item-contact">
-             <i class='bx bxs-phone contact-icon'></i>
-             <h3 class="contact-title">351269584</h3>
+                <i class='bx bxs-phone contact-icon'></i>
+                <h5 class="contact-title"> <a href="https://wa.me/+5493537687557" target="_blank">3537687557</a></h5>
             </div>
             <div class="item-contact">
-             <i class='bx bx-mail-send contact-icon'></i>
-             <h3 class="contact-title">veterinaria.patitas@gmail.com</h3>
+                <i class='bx bx-mail-send contact-icon'></i>
+                <h5 class="contact-title"><a
+                        href="mailto:veterinaria.patitas@gmail.com?Subject=Interesado%20en%20su%20servicio">veterinaria.patitas@gmail.com</a>
+                </h5>
             </div>
             <div class="item-contact">
-             <i class='bx bx-map contact-icon' ></i>
-             <h3 class="contact-title">Sucre 275 Córdoba, Argentina</h3>
-            </div>    
+                <i class='bx bx-map contact-icon'></i>
+                <h5 class="contact-title"> <a href="https://goo.gl/maps/Lxz724P9fqSjRZ2WA" target="_blanck">Sucre 275
+                        Córdoba, Argentina </a></h5>
+            </div>
         </div>
-	</footer>
+    </footer>
 </body>
+
 </html>

@@ -312,6 +312,24 @@ body{
     margin-right: 16px;
 }
 
+
+
+a:hover {
+    color: #2198A0;
+  }
+  
+  a{ 
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  h5{
+    font-weight: normal;
+    margin: 0;
+    padding: 15;
+    
+  }
 .contact{
     display: flex;
     width: 100%;
@@ -321,20 +339,20 @@ body{
 
 .item-contact{
     width: 25%;
-    padding: 60px 0;
+    padding: 20px 0;
     text-align: center;
     background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 }
 
 .contact-icon{
-    font-size: 24px;
+    font-size: 40px;
     color: #fff;
     line-height: 20px;
     margin-right: 4px;
 }
 .contact-title{
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
 
 }
 
