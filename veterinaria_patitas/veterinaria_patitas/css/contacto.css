@@ -1,13 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+}
 body{
 	font-family: 'Shadows Into Light', cursive;
+  margin: 0;
   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+  background-size: cover;
+  background-attachment: fixed;
 }
 #titulo{
-color: #fff;
+font-family: 'Shadows Into Light', cursive;
+color:#030303;
 width: 500px;
 text-align:center;
 margin:auto;
-  font-size:90px;
+font-size:40px;
 
 }
 #logo{
@@ -18,6 +28,7 @@ margin:auto;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
+  padding: 5px;
   
 }
 
@@ -29,7 +40,7 @@ margin:auto;
 }
 .nav-hero{
   color: #fff;
-  height: 150px;
+  height: 120px;
   border-bottom: 1px solid rgba(255,255,255, 0.1);
 }
 
@@ -62,120 +73,140 @@ margin:auto;
   width: 100%;
   flex-wrap: wrap;
   color: #fff;
+  
 }
 
 .item-contact{
   width: 25%;
-  padding: 60px 0;
+  padding: 20px 0;
   text-align: center;
   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+  
+}
+
+
+a:hover {
+  color: #2198A0;
+}
+
+a{ 
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+h5{
+  font-weight: normal;
+  margin: 0;
+  padding: 15;
+  
 }
 
 .contact-icon{
-  font-size: 24px;
+  font-size: 40px;
   color: #fff;
   line-height: 20px;
   margin-right: 4px;
 }
+
+
 .contact-title{
-  font-size: 24px;
-  line-height: 20px;
-
-}
-
-#menu_principal  ul li {
-	display: inline;
-}
-
-#menu_principal ul li a {
-	
-	text-decoration: none;
-	color:#030303;
-	padding: 2px;
-	border-radius: 2px;
-
-}
-
-form {
-  /* Centrar el formulario en la página */
-  margin:0 auto;
-  width: 600px;
-  justify-content: center;
-  align-items: center;
-  /* Esquema del formulario */
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
-
-label {
-  /* Tamaño y alineación uniforme */
-  display: inline-block;
-  width: 120px;
-  text-align: right;
-}
-input{
-	border-radius: 5px
-}
-select{
-	border-radius: 5px
-}
-input,textarea {
-  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
-     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
-  font: 1em sans-serif;
-
-  /* Tamaño uniforme del campo de texto */
-  width: 380px;
-  box-sizing: border-box;
-
-  /* Hacer coincidir los bordes del campo del formulario */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Destacado adicional para elementos que tienen el cursor */
-  border-color: #000;
+  font-size: 18px;
+  line-height: 18px; 
   
 }
 
-textarea {
-  /* Alinear los campos de texto multilínea con sus etiquetas */
-  vertical-align: top;
+* {
+  box-sizing: border-box;
+}
 
-  /* Proporcionar espacio para escribir texto */
-  height: 5em;
-  border-radius: 5px
+.formulario{
+  background: #fff;
+  margin-top: 150px;
+  padding: 3px;
 }
-button {
-  /* Alinear los botones con los campos de texto 
-  padding-left: 90px;  mismo tamaño que los elementos de la etiqueta */
-  border-radius: 5px
+
+h1{
+  text-align: center;
+  color: #1a2537;
+  font-size: 40px;
 }
-button:hover,
-button:focus {
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input [type= "submit"]{
+  font-size: 23px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+
+select{
+  font-size: 23px;
+  width: 50%;
+  padding: 10px;
+  border: none;
+}
+
+
+
+textarea{
+  font-size: 23px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  
+}
+
+.input-contenedor{
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.contenedor{
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+  align-content: center;
+}
+
+.formulario {
+  background: #fff;
+  margin-top: 150px;
+  padding: 3px;
+  align-items:center;
+}
+
+
+.button {
+  font-family: 'Shadows Into Light', cursive;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 23px;
+  background:  #2198A0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+.button:hover,
+.button:focus {
   outline     : none;
-  background  : #000;
+  /*background  : #000;*/
   color       : #FFF;
+  background: cadetblue;
+}
+@media(min-width:768px)
+{
+  .formulario{
+      margin: auto;
+      width: 500px;
+      margin-top: 150px;
+      border-radius: 2%;
+  }
 }
 
 
-button {
-  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-     entre las etiquetas y sus campos de texto */
-  margin-left: 29em;
-  background:#53CBC9;
-}
-
-}
