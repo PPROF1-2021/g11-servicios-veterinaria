@@ -182,4 +182,10 @@ p{
       margin-top: 150px;
       border-radius: 2%;
   }
+  .footer-caption{
+    width: 25%;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
 }
