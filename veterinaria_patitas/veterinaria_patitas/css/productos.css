@@ -1,6 +1,7 @@
 *{  margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
 }
 #titulo{
     color: #fff;
@@ -94,6 +95,7 @@ figure img:hover{
     color: #2198A0;
   }
 .contact{
+   
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -135,5 +137,11 @@ h5{
 .contact-title{
     font-size: 18px;
     line-height: 18px;
-  
+}
+
+
+.footer-caption{
+    width: 25%;
+    padding: 20px 0;
+    text-align: center;
 }

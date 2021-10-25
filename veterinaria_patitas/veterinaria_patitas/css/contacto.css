@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
 }
 body{
 	font-family: 'Shadows Into Light', cursive;
@@ -11,6 +12,7 @@ body{
   background-attachment: fixed;
 }
 #titulo{
+font-family: 'Shadows Into Light', cursive;
 color:#030303;
 width: 500px;
 text-align:center;
@@ -134,14 +136,14 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input [type= "submit"]{
-  font-size: 20px;
+  font-size: 23px;
   width: 82%;
   padding: 10px;
   border: none;
 }
 
 select{
-  font-size: 20px;
+  font-size: 23px;
   width: 50%;
   padding: 10px;
   border: none;
@@ -150,7 +152,7 @@ select{
 
 
 textarea{
-  font-size: 20px;
+  font-size: 23px;
   width: 100%;
   padding: 10px;
   border: none;
@@ -179,11 +181,11 @@ textarea{
 
 
 .button {
-  
+  font-family: 'Shadows Into Light', cursive;
   border: none;
   width: 100%;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
   background:  #2198A0;
   padding: 15px 20px;
   border-radius: 5px;

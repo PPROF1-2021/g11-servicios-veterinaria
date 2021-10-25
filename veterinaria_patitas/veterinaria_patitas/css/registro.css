@@ -2,17 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 body {
-  font-family: 'Shadows Into Light', cursive;
+  
   margin: 0;
   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
   background-size: cover;
   background-attachment: fixed;
 }
 body{
-	font-family: 'Shadows Into Light', cursive;
+	
   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 }
 #titulo{

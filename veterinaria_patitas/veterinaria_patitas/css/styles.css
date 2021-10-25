@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 :root{
     --lila:#AE8FC8;
     --turquesaclaro: #53CBC9;
@@ -12,16 +13,15 @@
 }
 
 *{
+    font-family: 'Shadows Into Light', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Shadows Into Light', cursive;
-}
 
 .container{
+    font-family: 'Shadows Into Light', cursive;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
