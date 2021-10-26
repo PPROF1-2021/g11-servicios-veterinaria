@@ -176,13 +176,10 @@ p{
 .link:hover{
    color: cadetblue;
 }
-<<<<<<< HEAD
+
 .row{
   font-size: 20px;
 }
-=======
-
-
 
 .footer-caption2{
   display: flex;
@@ -207,7 +204,7 @@ p{
     
 }
 
->>>>>>> fe249ce8304eb4c7b0771f42f9f0c0cb280a8de8
+
 @media(min-width:768px)
 {
   .formulario{
