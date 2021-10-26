@@ -169,3 +169,33 @@ h5{
     color: #2198A0;
       
 }
+
+@media screen and (max-width:700px){
+    main .container,
+    footer .container{
+        padding: 60px 0;
+    }
+
+    .nav-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .nav-hero{
+        height: auto;
+    }
+
+
+    .logo{
+        padding: 15px 0;
+        text-align: center;
+    }
+    .titulo{ 
+        padding: 10px;
+        font-size: 30px;
+    }
+}
+
+    
