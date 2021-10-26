@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 #titulo{
+    
     color: #fff;
 	width: 500px;
 	text-align:center;
@@ -141,7 +142,7 @@ h5{
     line-height: 18px;
 }
 
-img  {
+.figure img  {
     width:220px;
     height:220px;
   
