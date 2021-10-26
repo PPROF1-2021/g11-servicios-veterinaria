@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -5,11 +6,16 @@
   font-family: 'Shadows Into Light', cursive;
 }
 body{
-	font-family: 'Shadows Into Light', cursive;
+	
   margin: 0;
   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
   background-size: cover;
   background-attachment: fixed;
+}
+
+body{
+	
+  background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 }
 #titulo{
 font-family: 'Shadows Into Light', cursive;
@@ -120,24 +126,30 @@ h5{
 
 .formulario{
   background: #fff;
-  margin-top: 150px;
-  padding: 3px;
+  margin-top: 130px;
+  padding: 10px;
+  border-radius: 2%;
+
 }
 
 h1{
   text-align: center;
   color: #1a2537;
   font-size: 40px;
+  padding: 5px;;
+  
+
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"],
 input [type= "submit"]{
-  font-size: 23px;
-  width: 82%;
-  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  padding: 8px;
   border: none;
+  text-align:left;
 }
 
 select{
@@ -151,7 +163,7 @@ select{
 
 textarea{
   font-size: 23px;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: none;
   
@@ -160,7 +172,14 @@ textarea{
 .input-contenedor{
   margin-bottom: 15px;
   border: 1px solid #aaa;
-  font-family: 'Shadows Into Light', cursive;
+  /*font-family: 'Shadows Into Light', cursive;
+  font-size: 23px;
+  width:50%;
+  padding: 10px;
+  border: none;
+  display: inline-block;
+  font-size: 23px;
+  text-align:center;*/
 }
 
 .contenedor{
@@ -168,27 +187,35 @@ textarea{
   padding: 15px;
   align-items: center;
   align-content: center;
-}
+  
 
-.formulario {
-  background: #fff;
-  margin-top: 150px;
-  padding: 3px;
-  align-items:center;
 }
 
 
 .button {
-  font-family: 'Shadows Into Light', cursive;
+
   border: none;
   width: 100%;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   background:  #2198A0;
   padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
+  
   align-items: center;
+}
+
+.btn btn-primary{
+	width: 50%;
+	border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background:  #2198A0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
