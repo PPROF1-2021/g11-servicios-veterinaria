@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria Patitas -Inicio</title>
+    <title>Veterinaria Patitas -Mensaje</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Web mensaje enviado" />
+    <meta name="robots" content="index" />
+    <meta name="googlebot" content="index" />
+    <meta name="keywords"
+        content="mensaje, concluido,  servicios veterinarios, veterinaria, animales, perros, servicios, mascotas" />
+    <meta name="author" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
+    <meta name="copyright" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
 </head>
 <body>
         <!--Menú de navegacion-->
@@ -23,7 +30,7 @@
                    <a href="contacto.html" class="link">Contacto</a>
                    <a href="registro.html" class="link">Registrarse</a>
                    
-                   <a href="#" class="link">Turnero</a>
+                   <a href="turnero.html" class="link">Turnero</a>
 
                </div>
 
@@ -44,51 +51,43 @@
 		
 	
 	
-	<footer class="footer">
-       <div class="container footer-caption">
-           <section class="download">
-               <h3 class="title-footer">Descarga nuestra App</h3>
-            <div class="download-app">
-                <div class="download-item">
-                    <i class='bx bxl-apple download-logo'></i>
-                    <h4 class="download-title">App Store</h4>
-                    </div>
-                   <div class="download-item">
-                    <i class='bx bxl-play-store download-logo'></i>
-                    <h4 class="download-title">Play Store</h4>
-                   </div>
-               </div>
-               <div class="footer_copy">
-                   <p class="copyright">VeterinariaPatitas &copy;2021 Todos los derechos reservados</p>
-               </div>
-           </section>
-           <section class="socialmedia">
-               <div class="redes">
-                   <p class="redes-sociales">Seguinos en nuestras redes:</p>
-                   <i class='redes-icon bx bxl-facebook-circle' ></i>
-                   <i class='redes-icon bx bxl-twitter' ></i>
-                   <i class='redes-icon bx bxl-instagram-alt' ></i>
-               </div>
-           </section>
-       </div>
-       <div class="contact">
-           <div class="item-contact">
-            <i class='bx bx-copyright contact-icon' ></i>
-            <h3 class="contact-title">VeterinariaPatitas</h3>
-           </div>
-           <div class="item-contact">
-            <i class='bx bxs-phone contact-icon'></i>
-            <h3 class="contact-title">351269584</h3>
-           </div>
-           <div class="item-contact">
-            <i class='bx bx-mail-send contact-icon'></i>
-            <h3 class="contact-title">veterinaria.patitas@gmail.com</h3>
-           </div>
-           <div class="item-contact">
-            <i class='bx bx-map contact-icon' ></i>
-            <h3 class="contact-title">Sucre 275 Córdoba, Argentina</h3>
-           </div>    
-       </div>
-   </footer>
+   <footer class="footer">
+        <div class="container footer-caption2">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="productos.html">Productos</a></li>
+                    <li class="breadcrumb-item"><a href="contacto.html">Contacto</a></li>
+                    <li class="breadcrumb-item"><a href="registro.html">Registrarse</a></li>
+                    <li class="breadcrumb-item"><a href="login.html">Login</a></li>
+                    <li class="breadcrumb-item"><a href="turnero.html">Turnero</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="contact">
+            <div class="item-contact">
+                <i class='bx bx-copyright contact-icon'></i>
+                <h5 class="contact-title"> Copyright © 2021 - </br> Veterinaria Patitas </br> </br> Todos los derechos
+                    reservados.</h5>
+
+            </div>
+            <div class="item-contact">
+                <i class='bx bxs-phone contact-icon'></i>
+                <h5 class="contact-title"> <a href="https://wa.me/+5493537687557" target="_blank">3537687557</a></h5>
+            </div>
+            <div class=" item-contact">
+                <i class='bx bx-mail-send contact-icon'></i>
+                <h5 class="contact-title"><a href="mailto:veterinaria.patitas@gmail.com?Subject=Interesado%20en%20su%20servicio" ">veterinaria.patitas@gmail.com</a>
+                </h5>
+            </div>
+            <div class=" item-contact">
+                        <i class='bx bx-map contact-icon'></i>
+                        <h5 class="contact-title"> <a href="https://goo.gl/maps/Lxz724P9fqSjRZ2WA"
+                                target="_blanck">Sucre 275
+                                Córdoba, Argentina </a></h5>
+            </div>
+        </div>
+
+    </footer>
 </body>
 </html>

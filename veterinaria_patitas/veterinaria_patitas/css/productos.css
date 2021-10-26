@@ -1,9 +1,11 @@
-*{  margin: 0;
+*{
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shadows Into Light', cursive;
 }
 #titulo{
+    
     color: #fff;
 	width: 500px;
 	text-align:center;
@@ -28,18 +30,21 @@ body{
     margin-left: 0;
     margin-right: 0;
     padding: 0%;
-
 }
 
+article{
+    text-align: center;
+    
+}
 figure {
     margin-top: 100px;
-    margin-left: 20px;
-    float:left;
-    align-content:ceter;
-        background-color:rgb(255, 254, 241);
-        padding:15px 15px 15px 15px;
-        border:2px solid #BFBFBF;
-        box-shadow:7px 7px 10px rgba(0, 0, 0, 0.8);
+    /*float:left;*/
+    background-color:rgb(255, 254, 241);
+    padding:15px 30px 15px 15px;
+    border:2px solid #BFBFBF;
+    box-shadow:7px 7px 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: inline-block;
 }
 
 figcaption{
@@ -77,8 +82,7 @@ figure img:hover{
     padding: 0;
 
 }
-.logo-name{
-   
+.logo-name{ 
     padding: 10px;
     font-size: 30px;
 }
@@ -111,14 +115,13 @@ figure img:hover{
 }
   
   
-a:hover {
-    color: #2198A0;
-  }
-  
-a{ 
-    color: #fff;
-    outline: none;
-    text-decoration: none;
+.item-contact a:hover{  color: #2198A0;}
+
+
+.item-contact a{ 
+  color: #fff;
+  outline: none;
+  text-decoration: none;
 }
   
 h5{
@@ -139,9 +142,30 @@ h5{
     line-height: 18px;
 }
 
+.figure img  {
+    width:220px;
+    height:220px;
+  
+  }
 
-.footer-caption{
-    width: 25%;
-    padding: 20px 0;
-    text-align: center;
+.footer-caption2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 0%;
+    margin-top: 80px;
+       
+
+}
+.breadcrumb-item a{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+        
+}
+
+.breadcrumb-item a:hover {
+    color: #2198A0;
+      
 }

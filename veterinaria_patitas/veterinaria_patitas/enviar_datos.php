@@ -13,11 +13,11 @@ $cuerpo="Nombre: ".$nombre_formu."\r\n"."Correo: ".$correo_formu."\r\n"."Tel: ".
 
 $remitente="From:<$correo_formu>";
 
-mail($destino,$asunto,$cuerpo,$remitente);
+@mail($destino,$asunto,$cuerpo,$remitente);
 
-include("conexion.php");
+/*include("conexion.php");
 
-mysqli_query($datos_base, "INSERT INTO mensajes VALUES (0, '$nombre_formu', '$correo_formu', $tel_formu, '$motivo_formu', '$mensaje_formu')");
+mysqli_query($datos_base, "INSERT INTO mensajes VALUES (0, '$nombre_formu', '$correo_formu', $tel_formu, '$motivo_formu', '$mensaje_formu')");*/
 
 header("Location: mensaje_envio.php");
 
