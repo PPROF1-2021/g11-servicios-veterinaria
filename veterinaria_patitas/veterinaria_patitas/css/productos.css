@@ -1,7 +1,8 @@
-*{  margin: 0;
+*{
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Shadows Into Light', cursive;
 }
 #titulo{
     color: #fff;
@@ -30,13 +31,19 @@ body{
     padding: 0%;
 }
 
+article{
+    text-align: center;
+    
+}
 figure {
     margin-top: 100px;
-    float:left;
-        background-color:rgb(255, 254, 241);
-        padding:15px 30px 15px 15px;
-        border:2px solid #BFBFBF;
-        box-shadow:7px 7px 10px rgba(0, 0, 0, 0.8);
+    /*float:left;*/
+    background-color:rgb(255, 254, 241);
+    padding:15px 30px 15px 15px;
+    border:2px solid #BFBFBF;
+    box-shadow:7px 7px 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: inline-block;
 }
 
 figcaption{
@@ -107,14 +114,13 @@ figure img:hover{
 }
   
   
-a:hover {
-    color: #2198A0;
-  }
-  
-a{ 
-    color: #fff;
-    outline: none;
-    text-decoration: none;
+.item-contact a:hover{  color: #2198A0;}
+
+
+.item-contact a{ 
+  color: #fff;
+  outline: none;
+  text-decoration: none;
 }
   
 h5{
@@ -135,13 +141,30 @@ h5{
     line-height: 18px;
 }
 
+img  {
+    width:220px;
+    height:220px;
+  
+  }
 
-.footer-caption{
-    width: 35%;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 900px;
-    margin-left: 490px;
-    margin-bottom: 100;
+.footer-caption2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 0%;
+    margin-top: 80px;
+       
+
+}
+.breadcrumb-item a{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+        
 }
 
+.breadcrumb-item a:hover {
+    color: #2198A0;
+      
+}

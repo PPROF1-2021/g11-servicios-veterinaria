@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -86,11 +88,11 @@ font-size:70px;
 }
 
 
-a:hover {
-  color: #2198A0;
-}
+.item-contact a:hover{  
+color: #2198A0;}
 
-a{ 
+
+.item-contact a{ 
   color: #fff;
   outline: none;
   text-decoration: none;
@@ -174,6 +176,32 @@ p{
 .link:hover{
    color: cadetblue;
 }
+
+
+
+.footer-caption2{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 0%;
+  margin-top: 80px;
+  
+     
+
+}
+.breadcrumb-item a{
+  color:white;
+  text-decoration: none;
+  font-size: 22px;
+      
+}
+
+.breadcrumb-item a:hover {
+  color: #2198A0;
+    
+}
+
 @media(min-width:768px)
 {
   .formulario{
