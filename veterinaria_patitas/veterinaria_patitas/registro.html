@@ -50,88 +50,81 @@
             </div>
         </nav>
     </header>
+        
+        <Section class="formulario">
+            <form method="POST" action="enviar_datos.php" class="row g-3 needs-validation" novalidate>
+                <h1 class=titulo>Registrate</h1>
+                <div class="contenedor">
+                    <div class="input-contenedor"><input type="text" name="nombre" class="form-control"
+                            id="validationCustom01" required placeholder="Nombre">
+                        <div class="valid-feedback"> OK!</div>
+                        <div class="invalid-feedback"> Complete datos!</div>
+                    </div>
+                    
+                        <div class="input-contenedor"><input type="text" name="apellido" class="form-control"
+                                id="validationCustom01" required placeholder="Apellido">
+                            <div class="valid-feedback"> OK!</div>
+                            <div class="invalid-feedback"> Complete datos!</div>
+                        </div>
+                       
+                            <div class="input-contenedor"><input type="text" name="fecha" class="form-control"
+                                    id="validationCustom01" required placeholder="Fecha de nacimiento">
+                                <div class="valid-feedback"> OK!</div>
+                                <div class="invalid-feedback"> Complete datos!</div>
+                            </div>
 
-    <form class="formulario">
-
-        <h1>Registrate</h1>
-        <div class="contenedor">
-            <div class="row">
-                <div class ="col">
-                    <div class= "shadow-lg p-3 mb-5 mt-4 bg-body rounded">
-                        <form class="needs-validation" novalidate>
-                            <div class= "col-md-12">
-                                <label for="nombre" class="form-label">Nombre</label>
-                                <input type="nombre" class="form-control" id="nombre" required>
-                                <div class="valid-feedback">OK</div>
-                                <div class="invalid-feedback">Complete los datos</div>
-                            </div>
-                           
-                            <div class= "col-md-12">
-                                <label for="apellido" class="form-label">Apellido</label>
-                                <input type="apellido" class="form-control" id="apellido" required>
-                                <div class="valid-feedback">OK</div>
-                                <div class="invalid-feedback">Complete los datos</div>
-                            </div>
-                            <div class= "col-md-12">
-                                <label for="fecha" class="form-label">Fecha de nacimiento</label>
-                                <input type="fecha" class="form-control" id="fecha" >
-                                <div class="valid-feedback">OK</div>
-                                <div class="invalid-feedback">Complete los datos</div>
-                            </div>
-                          
-                            <div class= "col-md-12">
-                                <label for="email" class="form-label">Correo Electronico</label>
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                                <div class="valid-feedback">OK</div>
-                                <div class="invalid-feedback">Complete los datos</div>
-                            </div>
-                            <div class= "col-md-12">
-                                <label for="telefono" class="form-label">Telefono</label>
-                                <input type="telefono" class="form-control" id="telefono" required>
-                                <div class="valid-feedback">OK</div>
-                                <div class="invalid-feedback">Complete los datos</div>
-                            </div>
-                            <div class= "col-md-12">
-                                <label for="provincia">Provincia</label>
-                                <select name="provincia" id="provincia" class="form-select" required>
-                                    <option selected disabled value="">Seleccione..</option>
-                                    <option>Córdoba</option>
-                                    <option>Buenos Aires</option>
-                                    <option>Santa Fe</option>
-                                </select>
-                                
-                            </div>
-                            <div class= "col-md-12">
-                                <label for="pais">País</label>
-                                <select name="pais" id="pais" class="form-select" required>
-                                    <option selected disabled value="">Seleccione..</option>
-                                    <option>Argentina</option>
-                                   
-                                </select>
-                                
-                            </div>
-                            <div class= "col-md-12">
-                                <label for="contraseña" class="form-label">Contraseña</label>
-                                <input type="contraseña" class="form-control" id="contraseña" required>
-                                <div class="valid-feedback">OK</div>
-                                <div class="invalid-feedback">Complete los datos</div>
-                            </div>
-                            <br>
-                            <input type="submit" value="Registrate" class="button">
+                    <div class="input-contenedor"><input type="email" name="correo" class="form-control"
+                            id="validationCustom01" required placeholder="C@rreo electrónico">
+                        <div class="valid-feedback"> OK!</div>
+                        <div class="invalid-feedback"> Complete datos!, recuerde respetar el formato "ejemplo@gmail.com"</div>
+                    </div>
+    
+                    <div class="input-contenedor"><input type="number" name="tel" class="form-control"
+                            id="validationCustom01" required placeholder="Número de Celular">
+                        <div class="valid-feedback"> OK!</div>
+                        <div class="invalid-feedback"> Complete datos!</div>
+                    </div>
+                   
+                    <div class="input-contenedor"> <select name="provincia" class="form-control" id="validationCustom01"
+                            required>
+                            <option selected disabled value="">Elige Provincia</option>
+                            <option value="Provincia">Córdoba</option>
+                            <option value="Provincia">Buenos Aires</option>
+                            <option value="Provincia">Santa Fe</option>
+                        </select>
+                        <div class="valid-feedback"> OK!</div>
+                        <div class="invalid-feedback"> Complete datos!</div>
+                    </div>
+                    <div class="input-contenedor"> <select name="pais" class="form-control" id="validationCustom01"
+                        required>
+                        <option selected disabled value="">Elige País</option>
+                        <option value="Provincia">Argentina</option>
+                       
+                    </select>
+                    <div class="valid-feedback"> OK!</div>
+                    <div class="invalid-feedback"> Complete datos!</div>
+                </div>
+                <div class="input-contenedor"><input type="contraseña" name="contra" class="form-control"
+                    id="validationCustom01" required placeholder="Contraseña">
+                <div class="valid-feedback"> OK!</div>
+                <div class="invalid-feedback"> Complete datos!</div>
+                 </div>
+           
+                    <!--nuevas etiquetas input type="submit" value="Enviar su mensaje" class="button">-->
+                    <input type="submit" value="Registrate" class="button">
                             <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidChek" required>
                             <label class="form-check-label" for="invalidCheck">Al registrarte aceptas nuestras <b>Condiciones de uso</b> y <b>Política de privacidad.</b></label> 
-                            <div class="valid-feedback">¡Aceptado!</div>
+                            <div class="valid-feedback" style="font-size: 25px;"><b>¡Aceptado!</b></div>
                             <p>¿Ya tienes una cuenta? <a class="link-iniciar" href="login.html"> Iniciar Sesion</a></p>
                         </div>
-                        </form>
+
                     </div>
-                </div>
-            </div>
-        </div>
-    </form> 
+                    <!--<button class="btn btn-primary" type="submit">Enviar Mensaje</button>-->
+            </form>
+        </Section>
 
-
+      
     <!-- FUNCION SCRIPT PARA FORMULARIO BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
