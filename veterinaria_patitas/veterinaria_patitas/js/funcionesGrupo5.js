@@ -1,3 +1,5 @@
+//carousel
+
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carousel__lista'), {
 		slidesToShow: 4,
@@ -27,6 +29,10 @@ window.addEventListener('load', function(){
 		]
 	});
 });
+
+
+
+
 // Ejemplo de JavaScript de inicio para deshabilitar el envío de formularios si hay campos no válidos
 (function () {
 	'use strict'
