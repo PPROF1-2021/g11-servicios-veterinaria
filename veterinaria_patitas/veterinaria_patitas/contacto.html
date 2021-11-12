@@ -118,21 +118,24 @@
             <h1 id=titulo>Contáctanos</h1>
             <div class="contenedor">
                 <div class="input-contenedor"><input type="text" name="nombre_apellido" class="form-control"
-                        id="validationCustom01" required placeholder="Nombre Completo">
+                        id="validationCustom01"  placeholder="Nombre y Apellido Completo" required pattern="[A-Za-z0-9]{2,40}"
+                        title="">
                     <div class="valid-feedback"> OK!</div>
-                    <div class="invalid-feedback"> Complete datos!</div>
+                    <div class="invalid-feedback"> Complete los datos con letras y números. Tamaño mínimo: 2 caracteres. Tamaño máximo: 40  caracteres.</div>
                 </div>
                 <div class="input-contenedor"><input type="email" name="correo" class="form-control"
-                        id="validationCustom01" required placeholder="C@rreo electrónico">
+                        id="validationCustom01" placeholder="C@rreo electrónico"  required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                        title="" >
                     <div class="valid-feedback"> OK!</div>
                     <div class="invalid-feedback"> Complete datos!, recuerde respetar el formato "ejemplo@gmail.com"
                     </div>
                 </div>
 
                 <div class="input-contenedor"><input type="number" name="tel" class="form-control"
-                        id="validationCustom01" required placeholder="Número de Celular">
+                        id="validationCustom01" placeholder="Número de Celular" required pattern="[0-9]{8}"
+                        title="">
                     <div class="valid-feedback"> OK!</div>
-                    <div class="invalid-feedback"> Complete datos!</div>
+                    <div class="invalid-feedback"> Complete los datos con solo números </div>
                 </div>
                 <div class="input-contenedor"> <select name="motivo" class="form-control" id="validationCustom01"
                         required>
@@ -140,16 +143,17 @@
                         <option value="Consulta">Consulta</option>
                         <option value="Reclamo">Reclamo</option>
                         <option value="Pedido">Pedido</option>
-                        <option value="Opinion">Opinion</option>
+                        <option value="Opinion">Opinión</option>
+                        <option value="Opinion">Otro Asunto</option>
                     </select>
                     <div class="valid-feedback"> OK!</div>
-                    <div class="invalid-feedback"> Complete datos!</div>
+                    <div class="invalid-feedback"> Selecione una opción de la lista </div>
                 </div>
                 <div class="input-contenedor"><textarea name="mensaje" rows="8" class="form-control"
-                        id="validationCustom01" required placeholder="Mensaje"
+                        id="validationCustom01"  placeholder="Dejenos su mensaje" required minlength="5" maxlength="300"
                         style="font-family: 'Shadows Into Light', cursive" ;></textarea>
                     <div class="valid-feedback"> OK!</div>
-                    <div class="invalid-feedback"> Complete datos!</div>
+                    <div class="invalid-feedback"> Complete los datos, Tamaño mínimo: 5 caracteres. Tamaño máximo: 300 caracteres.</div>
                 </div>
                 <!--nuevas etiquetas input type="submit" value="Enviar su mensaje" class="button">-->
                 <input type="submit" value="Enviar Mensaje" class="button">
