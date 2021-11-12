@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
         content="mensaje, concluido,  servicios veterinarios, veterinaria, animales, perros, servicios, mascotas" />
     <meta name="author" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
     <meta name="copyright" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
+    <META HTTP-EQUIV="REFRESH" CONTENT="5;URL=https://veterinariapatita.000webhostapp.com/index.html">
 </head>
 <body>
         <!--Menú de navegacion-->
@@ -38,10 +39,14 @@
        </nav>
        <br>
        <!--Presentación y logo-->
+       
        <section class="container hero-main">
            <div class="hero-textos" >
-               <h1 class="title">Su mensaje se envió correctamente.</h1> 
+       
+               <h4 class="title">Su mensaje se envió correctamente.</h4> 
                <p class="copy">A la brevedad nos contactaremos con usted</p><br>
+               <p class="copy">En 5 segundos, será re-dreccionado<br> a la Pagina de INICIO</p><br>
+               
                
            </div>
            <img src="img/logo.jpeg" alt="logo-patitas" class="img1">
@@ -52,18 +57,7 @@
 	
 	
    <footer class="footer">
-        <div class="container footer-caption2">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="productos.html">Productos</a></li>
-                    <li class="breadcrumb-item"><a href="contacto.html">Contacto</a></li>
-                    <li class="breadcrumb-item"><a href="registro.html">Registrarse</a></li>
-                    <li class="breadcrumb-item"><a href="login.html">Login</a></li>
-                    <li class="breadcrumb-item"><a href="turnero.html">Turnero</a></li>
-                </ol>
-            </nav>
-        </div>
+        
         <div class="contact">
             <div class="item-contact">
                 <i class='bx bx-copyright contact-icon'></i>

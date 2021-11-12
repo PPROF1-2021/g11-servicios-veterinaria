@@ -50,6 +50,8 @@ window.addEventListener('load', function(){
 				}
 
 				form.classList.add('was-validated')
+				alert('Felicitaciones, La carga de los datos fue exitosa!');
+
 			}, false)
 		})
 })()
