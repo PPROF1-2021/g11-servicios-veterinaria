@@ -43,8 +43,8 @@
        <section class="container hero-main">
            <div class="hero-textos" >
        
-               <h4 class="title">Su mensaje se envió correctamente.</h4> 
-               <p class="copy">A la brevedad nos contactaremos con usted</p><br>
+               <h4 class="title">Ingreso Correctamente.</h4> 
+              
                <p class="copy">En 5 segundos, será re-direccionado<br> a la Pagina de INICIO</p><br>
                
                
