@@ -62,15 +62,7 @@ figure img:hover{
     transform:scale(1.1);
 }
 
-@media screen and (max-width:900px){
-.title{
-    font-size: 50px;
-    justify-content: space-evenly;
-}
-.nav-container{
-    justify-content: space-evenly;
-}
-}
+
 
 .hero{
     width: 100%;
@@ -192,6 +184,12 @@ h5{
         justify-content: space-evenly;
 
     }
+    .titulo{
+        font-size: 50px;
+        justify-content: space-evenly;
+        text-align: center;
+        color: cornsilk;
+    }
 
     .nav-hero{
         height: auto;
@@ -206,6 +204,7 @@ h5{
         padding: 10px;
         font-size: 30px;
     }
+
 }
 
     
