@@ -61,9 +61,11 @@ figure img:hover{
     -o-transform:scale(1.1);
     transform:scale(1.1);
 }
+
 @media screen and (max-width:900px){
 .title{
     font-size: 50px;
+    justify-content: space-evenly;
 }
 .nav-container{
     justify-content: space-evenly;
