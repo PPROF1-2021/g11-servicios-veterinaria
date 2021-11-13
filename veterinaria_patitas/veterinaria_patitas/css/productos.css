@@ -34,17 +34,18 @@ body{
 
 article{
     text-align: center;
+    margin:auto;
     
 }
 figure {
     margin-top: 100px;
-    /*float:left;*/
     background-color:rgb(255, 254, 241);
     padding:15px 30px 15px 15px;
     border:2px solid #BFBFBF;
     box-shadow:7px 7px 10px rgba(0, 0, 0, 0.8);
     padding: 20px;
     display: inline-block;
+  
 }
 
 figcaption{
@@ -62,15 +63,7 @@ figure img:hover{
     transform:scale(1.1);
 }
 
-@media screen and (max-width:900px){
-.title{
-    font-size: 50px;
-    justify-content: space-evenly;
-}
-.nav-container{
-    justify-content: space-evenly;
-}
-}
+
 
 .hero{
     width: 100%;
@@ -183,7 +176,8 @@ h5{
 @media screen and (max-width:700px){
     main .container,
     footer .container{
-        padding: 60px 0;
+        padding: 60px 30;
+        width: 100%;
     }
 
     .nav-container{
@@ -204,8 +198,24 @@ h5{
     }
     .titulo{ 
         padding: 10px;
-        font-size: 30px;
+        font-size: 50px;
+        text-align: center;
+        color: cornsilk;
     }
+    .title{
+        font-size: 50px;
+         justify-content: space-evenly;
+    }
+    .item-contact{
+        width: 100%;
+        padding: 30px 80;
+    }
+    .figure{ 
+        justify-content: space-evenly;
+        width: 100%;
+
+    }
+    
 }
 
-    
+
