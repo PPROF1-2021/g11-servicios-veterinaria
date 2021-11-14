@@ -15,6 +15,8 @@ $remitente="From:<$correo_formu>";
 
 mail($destino,$asunto, utf8_decode($cuerpo),$remitente);
 
+
+
 include("conexion.php");
 $host="localhost";
  $usuario="id17593546_admin";

@@ -15,8 +15,8 @@ window.addEventListener('load', function(){
 			  breakpoint: 450,
 			  settings: {
 				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: 2,
-				slidesToScroll: 2
+				slidesToShow: 3,
+				slidesToScroll: 3
 			  }
 			},{
 			  // screens greater than >= 1024px
@@ -33,7 +33,7 @@ window.addEventListener('load', function(){
 
 
 
-// Ejemplo de JavaScript de inicio para deshabilitar el envío de formularios si hay campos no válidos
+//  JavaScript de inicio para deshabilitar el envío de formularios si hay campos no válidos
 (function () {
 	'use strict'
 
@@ -50,17 +50,44 @@ window.addEventListener('load', function(){
 				}
 
 				form.classList.add('was-validated')
-				alert('Felicitaciones, La carga de los datos fue exitosa!');
+			
 
 			}, false)
-		})
+		}
+		
+		)
 })()
 
+// Funciones de los eventos.
 
+function miFuncion(){
+            alert('Opcion no disponible');
+        ;
+    }
+	
+function bigImg(x) {
+    x.style.height = "550px";
+    x.style.width = "550px";
+    }
 
+function normalImg(x) {
+  x.style.height = "500px";
+  x.style.width = "500px";
+  
+   
+}
 
+  function miMensaje() {
+    alert("Agregaste el producto a tu carrito");
+  }
 
-
+function alerta(){
+ var valor = document.getElementById('validationCustom01').value;  
+ if(valor != '')alert('Operación Exitosa: Se completo Correctamente el Formulario') 
+	
+	 	
+	
+}
 
  
 

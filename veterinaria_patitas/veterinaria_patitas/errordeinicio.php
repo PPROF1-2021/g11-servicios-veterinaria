@@ -15,7 +15,7 @@
         content="mensaje, concluido,  servicios veterinarios, veterinaria, animales, perros, servicios, mascotas" />
     <meta name="author" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
     <meta name="copyright" content="Priscilla Arianna MINGORANCE, Romina Gisela MOLINA, Lourdes MONTI LELOUTRE" />
-    <META HTTP-EQUIV="REFRESH" CONTENT="5;URL=https://veterinariapatita.000webhostapp.com/index.html">
+    <META HTTP-EQUIV="REFRESH" CONTENT="5;URL=https://veterinariapatita.000webhostapp.com/login.html">
 </head>
 <body>
         <!--Menú de navegacion-->
@@ -43,10 +43,10 @@
        <section class="container hero-main">
            <div class="hero-textos" >
        
-               <h4 class="title">Su mensaje se envió correctamente.</h4> 
-               <p class="copy">A la brevedad nos contactaremos con usted</p><br>
-               <p class="copy">En 5 segundos, será re-direccionado<br> a la Pagina de INICIO</p><br>
-               
+               <h4 class="title">Ups, NO has podido iniciar sesion</h4> 
+              
+               <p class="copy">En 5 segundos, será re-direccionado<br> a la Pagina de Login</p><br>
+              
                
            </div>
            <img src="img/logo.jpeg" alt="logo-patitas" class="img1">
