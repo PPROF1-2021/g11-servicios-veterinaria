@@ -79,6 +79,8 @@ font-size:40px;
   width: 100%;
   flex-wrap: wrap;
   color: #fff;
+  background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+  
   
 }
 
@@ -86,7 +88,7 @@ font-size:40px;
   width: 25%;
   padding: 20px 0;
   text-align: center;
-  background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+ /* background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );*/
   
 }
 
@@ -352,4 +354,10 @@ margin-right:35px;
 	.contenido-principal > * {
 		width: 100%;
 	}
+  .carousel__elemento img{
+  width:auto;
+  height:auto;
+  /*padding:0px;*/
+  }
+
 }
