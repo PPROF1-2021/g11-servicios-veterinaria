@@ -62,7 +62,25 @@ figure img:hover{
     -o-transform:scale(1.1);
     transform:scale(1.1);
 }
-
+figure input {
+border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background:  #2198A0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  align-items: center;
+}
+figure input:hover,
+figure input:focus {
+  outline     : none;
+  /*background  : #000;*/
+  color       : #FFF;
+  background: cadetblue;
+}
 
 
 .hero{
