@@ -68,7 +68,7 @@ figure img:hover{
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 
 }
 .nav-hero{
@@ -107,6 +107,7 @@ figure img:hover{
     width: 100%;
     flex-wrap: wrap;
     color: #fff;
+    background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
  
 }
   
@@ -114,7 +115,7 @@ figure img:hover{
     width: 25%;
     padding: 20px 0;
     text-align: center;
-    background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+    /*background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );*/
 }
   
   
