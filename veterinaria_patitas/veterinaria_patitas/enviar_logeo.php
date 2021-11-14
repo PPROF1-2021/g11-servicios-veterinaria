@@ -36,29 +36,21 @@ if (! $con) {
 $constatacion=("select * from usuario where correo_electronico='$correo_formu' and contrasena='$contrasena_formu'");
 $resultado=mysqli_query($con,$constatacion);
 $num=mysqli_num_rows($resultado);
-//$id=mysql_query("select IdAcceso from usuario where correo_electronico='$correo_formu' and contrasena='$contrasena_formu'");
+
 //$fechaHora=getdate(YYYY-MM-DD);
 if ($num>0) {
+    	$id=("select IdAcceso from usuario where correo_electronico='$correo_formu' and contrasena='$contrasena_formu'");
+        $IdAcceso= mysqli_query($con,$id);
+        $resultadoID= $IdAcceso->fetch_array()[0];
+        $DateAndTime = date('y-m-d h:i:s', time());
+        $consultadeinsercion = "INSERT INTO login (IdAcceso, fechaHora) VALUES ('$resultadoID', '$DateAndTime')";
+        mysqli_query ($con,$consultadeinsercion);
  
 		header("Location: bienvenido.php");
-     //   $IdAcceso= mysql
-       // $consulta = "INSERT INTO login (IdAcceso, fechaHora) VALUES ('$id', '$fechaHora', )";
- 
+	
 	} else{
 	    	header("Location: errordeinicio.php");
-//echo "<h1>INTENTA DE NUEVO, verifica tu email o contraseña</h1>";
- 
-//$consulta = "INSERT INTO contacto (nombreapellido, correo, telefono, motivo, mensaje) VALUES ('$nombre_formu', '$correo_formu', '$tel_formu','$motivo_formu', '$mensaje_formu')";
-
-//Usamos esas variables:
-//if (mysqli_query ($con,  $consulta)){
-   //echo "Has Iniciado Sesion";
-    
-   //  header("Location: index.html");
-   // } else {
-    //echo "<h3>No se encontro registro de usuario</h3>";
-   // echo "Error: " .  $consulta . "<br>" . mysqli_error($con);
- }
+	}
  mysqli_close($con);
 
 
