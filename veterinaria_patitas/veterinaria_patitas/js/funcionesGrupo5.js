@@ -33,7 +33,7 @@ window.addEventListener('load', function(){
 
 
 
-// Ejemplo de JavaScript de inicio para deshabilitar el envío de formularios si hay campos no válidos
+//  JavaScript de inicio para deshabilitar el envío de formularios si hay campos no válidos
 (function () {
 	'use strict'
 
@@ -56,9 +56,28 @@ window.addEventListener('load', function(){
 		})
 })()
 
+// Funciones de los eventos.
 
+function miFuncion(){
+            alert('Opcion no disponible');
+        ;
+    }
+	
+function bigImg(x) {
+    x.style.height = "550px";
+    x.style.width = "550px";
+    }
 
+function normalImg(x) {
+  x.style.height = "500px";
+  x.style.width = "500px";
+  
+   
+}
 
+  function miMensaje() {
+    alert("Agregaste el producto a tu carrito");
+  }
 
 
 
