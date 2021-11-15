@@ -327,6 +327,7 @@
     font-size: 24px;
     margin-right: 30px;
     display: inline-block;
+	 color:black;
 }
 
 .redes-sociales{
@@ -357,14 +358,14 @@
     width: 100%;
     flex-wrap: wrap;
     color: #fff;
-   
+    background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 }
 
 .item-contact{
     width: 25%;
     padding: 20px 0;
     text-align: center;
-   background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
+    background: linear-gradient(180deg,#5d476e 0%,#AE8FC8 100% );
 }
 
 .contact-icon{
