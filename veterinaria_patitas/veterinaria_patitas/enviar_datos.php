@@ -1,4 +1,5 @@
 <?php
+ 
 $nombre_formu=$_POST['nombre_apellido'];
 $correo_formu=$_POST['correo'];
 $tel_formu=$_POST['tel'];
@@ -35,10 +36,13 @@ if (! $con) {
 //Usamos esas variables:
 if (mysqli_query ($con,  $consulta)){
    // echo "<h3>Registro agregado.</h3>";
-    header("Location: mensaje_envio.php");
+    echo '<script language="javascript">alert("Operación Exitosa: Se completo Correctamente el Formulario");</script>';
+    include('mensaje_envio.php');
+    //header("Location: mensaje_envio.php");
+   
    //  header("Location: index.html");
     } else {
-    echo "<h3>No se agregó nuevo registro</h3>";
+    echo "<h3>Ups! no llego tu consulta, intentado de nuevo</h3>";
     echo "Error: " .  $consulta . "<br>" . mysqli_error($con);
  }
  mysqli_close($con);
