@@ -61,8 +61,8 @@ window.addEventListener('load', function(){
 // Funciones de los eventos.
 
 function miFuncion(){
-            alert('Opcion no disponible');
-        ;
+            alert('Opción no disponible');
+        
     }
 	
 function bigImg(x) {
@@ -78,16 +78,14 @@ function normalImg(x) {
 }
 
   function miMensaje() {
-    alert("Agregaste el producto a tu carrito");
+    alert("Agregaste el producto a tu carrito!..");
   }
 
 function alerta(){
  var valor = document.getElementById('validationCustom01').value;  
- if(valor != '')alert('Operación Exitosa: Se completo Correctamente el Formulario') 
-	
-	 	
-	
+ if(valor != ''){alert('Operación Exitosa: Se completo Correctamente el Formulario');} 
 }
+
 
 function calcularEdad(fecha) {
 	//var fecha = document.getElementsByName('fecha').value;
@@ -101,16 +99,10 @@ function calcularEdad(fecha) {
     }
 
 	if (edad >= 18){
-		alert("Tiene: " + edad + " Es mayor puede continuar.")
+		alert("Tiene: " + edad + " Años. Eres mayor de edad puedes continuar.");
 	}else{
-		alert("Tiene: " + edad + " Es menor de edad no puede continuar.")
+		alert("Tiene: " + edad + " Años. Eres menor de edad NO puedes continuar.");
 		
 	}
 
 }
-
-
-
- 
-
-

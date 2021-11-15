@@ -118,7 +118,7 @@
             <h1 id=titulo>Contáctanos</h1>
             <div class="contenedor">
                 <div class="input-contenedor"><input type="text" name="nombre_apellido" class="form-control"
-                        id="validationCustom01"  placeholder="Nombre y Apellido Completo" required pattern="[A-Za-z0-9]{2,40}"
+                        id="validationCustom01"  placeholder="Nombre y Apellido Completo" required pattern="{2,40}"
                         title="">
                     <div class="valid-feedback"> OK!</div>
                     <div class="invalid-feedback"> Complete los datos con letras y números. Tamaño mínimo: 2 caracteres. Tamaño máximo: 40  caracteres.</div>
@@ -150,13 +150,13 @@
                     <div class="invalid-feedback"> Selecione una opción de la lista </div>
                 </div>
                 <div class="input-contenedor"><textarea name="mensaje" rows="8" class="form-control"
-                        id="validationCustom01"  placeholder="Dejenos su mensaje" required minlength="5" maxlength="300"
+                        id="validationCustom01"  placeholder="Dejenos su mensaje" required minlength="3" maxlength="300"
                         style="font-family: 'Shadows Into Light', cursive" ;></textarea>
                     <div class="valid-feedback"> OK!</div>
-                    <div class="invalid-feedback"> Complete los datos, Tamaño mínimo: 5 caracteres. Tamaño máximo: 300 caracteres.</div>
+                    <div class="invalid-feedback"> Complete los datos, Tamaño mínimo: 3 caracteres. Tamaño máximo: 300 caracteres.</div>
                 </div>
                 <!--nuevas etiquetas input type="submit" value="Enviar su mensaje" class="button">-->
-                <input type="submit" value="Enviar Mensaje" class="button" onclick="alerta()">
+                <input type="submit" value="Enviar Mensaje" class="button" >
                <!--<                button class="btn btn-primary" type="submit">Enviar Mensaje</button>-->
             </div>
 
