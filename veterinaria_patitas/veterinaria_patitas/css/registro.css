@@ -219,7 +219,17 @@ p{
   color: #2198A0;
     
 }
-
+#btn{
+ border: none;
+  width: 50%;
+  height: 50%;
+  color: white;
+  font-size: 18px;
+  background:  #2198A0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 @media(min-width:768px)
 {

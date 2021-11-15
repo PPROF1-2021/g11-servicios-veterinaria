@@ -101,8 +101,13 @@ function calcularEdad(fecha) {
 	if (edad >= 18){
 		alert("Tiene: " + edad + " Años. Eres mayor de edad puedes continuar.");
 	}else{
+		if (isNaN(edad)){
+			alert("Error la edad no puede ser de " + edad + " Años. Corrijalo para continuar.");
+		}
+		else{
 		alert("Tiene: " + edad + " Años. Eres menor de edad NO puedes continuar.");
 		
+	}
 	}
 
 }
