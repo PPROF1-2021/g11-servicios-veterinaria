@@ -266,6 +266,14 @@ textarea{
     text-align: center;
     margin-bottom: 80px;
   }
+  .carousel__elemento img{
+
+    width:auto;
+    height:auto;
+    padding:auto;
+  
+  }
+  
 }
 
 /* --- --- CAROUSEL --- --- */
