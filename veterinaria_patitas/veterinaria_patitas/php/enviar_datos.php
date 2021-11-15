@@ -37,7 +37,7 @@ if (! $con) {
 if (mysqli_query ($con,  $consulta)){
    // echo "<h3>Registro agregado.</h3>";
     echo '<script language="javascript">alert("Operación Exitosa: Se completo Correctamente el Formulario");</script>';
-    include('mensaje_envio.php');
+    include('php/mensaje_envio.php');
     //header("Location: mensaje_envio.php");
    
    //  header("Location: index.html");

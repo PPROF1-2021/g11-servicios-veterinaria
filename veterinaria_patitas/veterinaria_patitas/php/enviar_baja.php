@@ -1,6 +1,6 @@
 <?php
 $contrasena_formu=$_POST['contrasena'];
-$correo_formu=$_POST['correo'];
+$dni_formu=$_POST['dni'];
 
 
 
@@ -16,9 +16,6 @@ if (! $con) {
 
  $db = mysqli_select_db($con,  $basededatos) or die ( "Upps! no se ha podido conectar a la base de datos" );
 
-$contrasena_formu=$_POST['contrasena'];
-$correo_formu=$_POST['correo'];
-
 
 
 include("conexion.php");
@@ -31,25 +28,27 @@ if (! $con) {
     die("Conexión fallida: " . mysqli_connect_error());
 }
 
+//proceso de baja
  $db = mysqli_select_db($con,  $basededatos) or die ( "Upps! no se ha podido conectar a la base de datos" );
  
-$constatacion=("select * from usuario where correo_electronico='$correo_formu' and contrasena='$contrasena_formu'");
+$constatacion=("select * from usuario where correo_electronico='$correo_formu' and dni='$dni_formu'");
 $resultado=mysqli_query($con,$constatacion);
 $num=mysqli_num_rows($resultado);
 
-//$fechaHora=getdate(YYYY-MM-DD);
+
 if ($num>0) {
-    	$id=("select IdAcceso from usuario where correo_electronico='$correo_formu' and contrasena='$contrasena_formu'");
+    	$id=("select IdAcceso from usuario where correo_electronico='$correo_formu' and dni='$dni_formu'");
         $IdAcceso= mysqli_query($con,$id);
         $resultadoID= $IdAcceso->fetch_array()[0];
         $DateAndTime = date('y-m-d h:i:s', time());
-        $consultadeinsercion = "INSERT INTO login (IdAcceso, fechaHora) VALUES ('$resultadoID', '$DateAndTime')";
-        mysqli_query ($con,$consultadeinsercion);
+        $consultadeactualizacion = "UPDATE  usuario set fecha_de_baja=$DateAndTime  where IdAcceso=$resultadoID')";
+        mysqli_query ($con,$consultadeactualizacion);
  
-		header("Location: bienvenido.php");
+		Echo:("Lamentamos Su baja!");
 	
 	} else{
-	    	header("Location: errordeinicio.php");
+	    
+        Echo:("No escontramos su registracion compruebe los datos");
 	}
  mysqli_close($con);
 

@@ -40,7 +40,6 @@
        <br>
    
 
-
 <?php
 $nombre_formu=$_POST['nombre'];
 $apellido_formu=$_POST['apellido'];
@@ -68,6 +67,20 @@ if (! $con) {
 
 
  $db = mysqli_select_db($con,  $basededatos) or die ( "Upps! no se ha podido conectar a la base de datos" );
+ 
+ $constatacion=("select * from usuario where correo_electronico='$correo_formu' and dni='$dni_formu'");
+ $resultado=mysqli_query($con,$constatacion);
+ $num=mysqli_num_rows($resultado);
+ 
+ 
+ if ($num>0) {
+           
+         echo"Usuario Ya Registrado!";
+     
+     } else{
+                
+     
+
  $consulta = "INSERT INTO usuario (nombre,apellido,fecha_de_nacimiento,telefono,localidad_CP,correo_electronico,contrasena,fecha_de_baja,domicilio,dni,tipo_dni) VALUES ('$nombre_formu','$apellido_formu', '$fecha_formu','$tel_formu','$cod_postal_formu','$correo_formu','$contra_formu','$fecha_baja_formu','$domicilio_formu','$dni_formu','$tipo_dni_formu')";
 
 //Usamos esas variables:
@@ -85,6 +98,8 @@ if (mysqli_query ($con,  $consulta)){
     echo "<h3>No se agregó nuevo registro</h3>";
     echo "Error: " .  $usuario . "<br>" . mysqli_error($con);
  }
+
+}
  mysqli_close($con);
 
 
@@ -96,9 +111,6 @@ if (mysqli_query ($con,  $consulta)){
        <section class="container hero-main">
            <div class="hero-textos" >
        
-                
-               
-               <p class="copy">Ya es un usuario registrado</p><br>
                <p class="copy">En 5 segundos, será re-direccionado<br> a la Pagina de INICIO</p><br>
                
            </div>
@@ -134,5 +146,3 @@ if (mysqli_query ($con,  $consulta)){
     </footer>
 </body>
 </html>
-
-?>
