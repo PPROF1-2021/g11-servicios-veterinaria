@@ -40,6 +40,7 @@
        <br>
    
 
+       <div class="regis_exitoso">
 <?php
 $nombre_formu=$_POST['nombre'];
 $apellido_formu=$_POST['apellido'];
@@ -82,15 +83,17 @@ if (! $con) {
      
 
  $consulta = "INSERT INTO usuario (nombre,apellido,fecha_de_nacimiento,telefono,localidad_CP,correo_electronico,contrasena,fecha_de_baja,domicilio,dni,tipo_dni) VALUES ('$nombre_formu','$apellido_formu', '$fecha_formu','$tel_formu','$cod_postal_formu','$correo_formu','$contra_formu','$fecha_baja_formu','$domicilio_formu','$dni_formu','$tipo_dni_formu')";
-
+   
 //Usamos esas variables:
 if (mysqli_query ($con,  $consulta)){
     
-   echo "<h3>$nombre_formu   $apellido_formu  </h3>";
-   echo "<h3>$tipo_dni_formu   $dni_formu  </h3>";
-   echo "<h3>Con su email  $correo_formu    </h3>";
    
-   echo "<h4> Fue Registrado Exitosamente.</h4>";
+   echo "<h3>Usurio: $nombre_formu   $apellido_formu  </h3>";
+   echo "<h3>DNI: $dni_formu  </h3>";
+   echo "<h3>Email:  $correo_formu </h3>";
+  
+   
+   echo "<h4>¡Fue Registrado Exitosamente!</h4>";
      
    // header("Location: mensaje_envio.php");
    //  header("Location: index.html");kate
@@ -102,10 +105,8 @@ if (mysqli_query ($con,  $consulta)){
 }
  mysqli_close($con);
 
-
-
-
 ?>
+</div>
     <!--Presentación y logo-->
        
        <section class="container hero-main">

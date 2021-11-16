@@ -102,8 +102,7 @@
     font-weight: 700;
 
 }
-
-.copy{
+https://files.000webhost.com/
     font-size: 25px;
     color: #fff;
     text-shadow: var(--shadow) var(--color_shadow);
@@ -379,6 +378,18 @@
     line-height: 18px;
 
 }
+.regis_exitoso{
+    font-size: 22px ;
+    margin-left: 15%;
+    color: black;
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg,white 0%,white 100% );
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
 
 
 /*Aca adapto la pagina de inicio para diferentes dispositivos, para que sea responsive*/
@@ -543,8 +554,19 @@
         width: 100%;
         padding: 30px 0;
     }
-
-    
+    .regis_exitoso{
+        font-size: 22px;
+        margin-left: auto;
+        color: black;
+        width: auto;
+        padding: 30px 0;
+        overflow: hidden;
+        background: linear-gradient(180deg,white 0%,white 100% );
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        }
+        
 }
 
 
