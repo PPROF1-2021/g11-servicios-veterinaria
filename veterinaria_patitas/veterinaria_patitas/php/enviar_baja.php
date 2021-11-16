@@ -1,6 +1,7 @@
 <?php
+$correo_formu=$_POST['correo']
 $contrasena_formu=$_POST['contrasena'];
-$dni_formu=$_POST['dni'];
+
 
 
 
@@ -31,13 +32,13 @@ if (! $con) {
 //proceso de baja
  $db = mysqli_select_db($con,  $basededatos) or die ( "Upps! no se ha podido conectar a la base de datos" );
  
-$constatacion=("select * from usuario where correo_electronico='$correo_formu' and dni='$dni_formu'");
+$constatacion=("select * from usuario where correo_electronico='$correo_formu' and contrasena='$contrasena_formu'");
 $resultado=mysqli_query($con,$constatacion);
 $num=mysqli_num_rows($resultado);
 
 
 if ($num>0) {
-    	$id=("select IdAcceso from usuario where correo_electronico='$correo_formu' and dni='$dni_formu'");
+    	$id=("select IdAcceso from usuario where correo_electronico='$correo_formu' and  contrasena='$contrasena_formu'");
         $IdAcceso= mysqli_query($con,$id);
         $resultadoID= $IdAcceso->fetch_array()[0];
         $DateAndTime = date('y-m-d h:i:s', time());
