@@ -102,7 +102,8 @@
     font-weight: 700;
 
 }
-https://files.000webhost.com/
+
+.copy{
     font-size: 25px;
     color: #fff;
     text-shadow: var(--shadow) var(--color_shadow);
@@ -134,7 +135,7 @@ https://files.000webhost.com/
 }
 .copy-section{
     color:var(--turquesaclaro);
-    font-size: 28px;
+    font-size: 40px;
     line-height: 32px;
     margin-bottom: 60px;
 }
