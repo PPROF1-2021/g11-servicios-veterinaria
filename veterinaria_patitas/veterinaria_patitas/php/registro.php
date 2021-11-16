@@ -69,7 +69,7 @@ if (! $con) {
 
  $db = mysqli_select_db($con,  $basededatos) or die ( "Upps! no se ha podido conectar a la base de datos" );
  
- $constatacion=("select * from usuario where correo_electronico='$correo_formu' and dni='$dni_formu'");
+ $constatacion=("select * from usuario where correo_electronico='$correo_formu' and dni='$dni_formu' and fecha_de_baja='$fecha_baja_formu'");
  $resultado=mysqli_query($con,$constatacion);
  $num=mysqli_num_rows($resultado);
  
