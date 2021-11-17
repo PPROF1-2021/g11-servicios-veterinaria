@@ -38,7 +38,7 @@
     <!--carrousel--->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" type="text/css" href="css/contacto.css" />
+    <link rel="stylesheet" type="text/css" href="css/registro.css" />
 
 </head>
 
@@ -67,6 +67,7 @@
 
     <Section class="formulario">
         <form method="POST" action="" class="row g-3 needs-validation" novalidate>
+            <div> <p></p></div>
             <h1 class=titulo>Actualiza Tus Datos</h1>
             <div class="contenedor">
                 <div class="input-contenedor"><input type="email" name="correo" class="form-control"
@@ -77,7 +78,7 @@
                     <div class="invalid-feedback"> Complete datos!, recuerde respetar el formato "ejemplo@gmail.com"
                     </div>
                 </div>
-                <div class="input-contenedor"><input type="contraseña" name="contra" class="form-control"
+                <div class="input-contenedor"><input type="password" name="contra" class="form-control"
                         id="validationCustom01" required placeholder="Contraseña">
                     <div class="valid-feedback"> OK!</div>
                     <div class="invalid-feedback"> Complete datos!</div>
@@ -168,14 +169,8 @@
 
 
                 <!--nuevas etiquetas input type="submit" value="Enviar su mensaje" class="button">-->
-                <input type="submit" value="Registrate" class="button">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidChek" required>
-                    <label class="form-check-label" for="invalidCheck">Al registrarte aceptas nuestras <b>Condiciones de
-                            uso</b> y <b>Política de privacidad.</b></label>
-                    <div class="valid-feedback" style="font-size: 25px;"><b>¡Aceptado!</b></div>
-                    <p>¿Ya tienes una cuenta? <a class="link-iniciar" href="login.html"> Iniciar Sesion</a></p>
-                </div>
+                <input type="submit" value="Actualizar" class="button">
+                
 
             </div>
             <!--<button class="btn btn-primary" type="submit">Enviar Mensaje</button>-->
