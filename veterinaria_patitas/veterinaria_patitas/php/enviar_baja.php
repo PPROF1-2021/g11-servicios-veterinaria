@@ -89,7 +89,8 @@ if ($num>0) {
         $consultadeactualizacion =("UPDATE  usuario set fecha_de_baja='$DateAndTime'  where IdAcceso='$resultadoID'");
         mysqli_query ($con,$consultadeactualizacion);
  
-		echo"Lamentamos su baja! :(";
+		echo"<h3>Se confirma la baja del usurio: $correo_formu </h3>";
+		echo"¡Lo Lamentamos! :(";
 	
 	} else{
 	    
