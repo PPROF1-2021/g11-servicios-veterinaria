@@ -102,7 +102,7 @@ function calcularEdad(fecha) {
 		alert("Tiene: " + edad + " Años. Eres mayor de edad puedes continuar.");
 	}else{
 		if (isNaN(edad)){
-			alert("Error la edad no puede ser de " + edad + " Años. Corrijalo para continuar.");
+			alert("Error: No has escrito la fecha de nacimiento. Corrijalo para continuar.");
 		}
 		else{
 		alert("Tiene: " + edad + " Años. Eres menor de edad NO puedes continuar.");

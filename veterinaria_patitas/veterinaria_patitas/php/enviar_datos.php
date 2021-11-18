@@ -10,11 +10,11 @@ $destino="rominamolina_4@hotmail.com";
 
 $asunto="Mensaje desde la pagina Veterinaria";
 
-$cuerpo="Nombre: ".$nombre_formu."\r\n"."Correo: ".$correo_formu."\r\n"."Tel: ".$tel_formu."\r\n"."Motivo: ".$motivo_formu."\r\n"."Mensaje: ".$mensaje_formu;
+$cuerpo=str_replace("Nombre: ".$nombre_formu."\r\n"."Correo: ".$correo_formu."\r\n"."Tel: ".$tel_formu."\r\n"."Motivo: ".$motivo_formu."\r\n"."Mensaje: ".$mensaje_formu);
 
 $remitente="From:<$correo_formu>";
 
-mail($destino,$asunto, utf8_decode($cuerpo),$remitente);
+mail($destino,$asunto, utf8_decode($cuerpo));
 
 
 
